@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    font-family:Arial;
+    border:border-box;
+}
+body{
+    background-color: rgb(204,202,202);
+}
+
+.navbar{
+    
+    height:70px;
+    background-color:#0f1111 ;
+    color:white ;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+.nav-logo{
+    height:60px;
+    width: 100px;
+}
+.logo{
+    background-image: url("amazonlogo.png");
+    background-size: cover;
+    height:50px;
+    width: 100px;
+}
+.border{
+    border: 2px solid transparent;
+    padding: 4px;
+}
+.border:hover{
+    border:2px solid white;
+    border-radius: 10px;
+}
+
+/*box2*/
+.adress-first{
+    color:#cccccc;
+    font-size: 0.85rem;
+    margin: 10px;
+}
+.add-second{
+font-size: 1rem;
+margin: 3px;
+}
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+.nav-adress{
+    width: 100px;
+    margin: 10px;
+}
+/* Search box*/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    width: 600px;
+    height: 40px;
+    border-radius: 4px;
+    border:2px solid rgb(170, 121, 56);/*for not move to right*/
+}
+
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+
+.search-icon{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(190, 166, 27);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+.nav-search:hover{
+    border: 2px solid orange ;
+}
+/*Language box*/
+/* Language Selection Box */
+.nav-language {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 2px solid white;  /* Adds full border */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;
+    width: auto;
+}
+
+/* Hover Effect */
+.nav-language:hover {
+    border-color: #ff9900;  /* Border turns orange on hover */
+}
+
+/* Inner Flex Container */
+.lang-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;  
+}
+
+/* Flag Image */
+.lang-select img {
+    width: 20px;
+    height: 15px;  
+}
+
+/* Dropdown */
+.lang-select select {
+    background: transparent;
+    border: none;
+    color: rgb(48, 188, 212);
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Dropdown Focus Border */
+.lang-select select:focus {
+    border: 1px solid rgb(145, 70, 70);
+    border-radius: 3px;
+}
+
+
+/*box4*/
+.nav-signin .nav-return{
+    margin: 15px;
+}
+span{
+    font-size: 0.7rem;
+    margin: 10px; 
+}
+.nav-second {
+    font-size: 0.95rem;
+    font-weight:500;
+    margin:10px;
+}
+
+/*box5*/
+.nav-cart i{
+    font-size: 35px;
+}
+.nav-cart{
+    font-size: 0.95rem;
+    font-weight: 500px;
+}
+
+/*Panel*/
+.panel {  
+    
+    height: 40px;
+    background-color: rgb(47, 47, 75);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 70px;
+    z-index: 0;
+}
+.panel-ops p{
+    display: inline;
+    margin: 10px;
+}
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-dish{
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+/*Hero-Section*/
+
+.hero-section{
+    background-image: url('heroimage.png');
+    height: 350px;
+    margin-top: 70px;
+    background-size: cover;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-section a{
+text-decoration: none;
+color: #007185;
+}
+.box a{
+    text-decoration: none;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;/*verticall center*/
+    justify-content: center; /*Column center*/
+    position:25px ; 
+    position: relative;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.box{
+    /*border: 2px solid black;*/
+    height:300px;
+    width: 24%;
+    background-color: white;
+    font-size: 0.85rem;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+.box-img{
+    height: 230px;
+    
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.box-content{
+    margin-left: 10px;
+    margin: 10px;
+}
+.box-content p{
+    color: #007185;
+}
+
+/*Scroll Image*/
+.scroll-product {
+    width:96%;
+    margin: 10px 10px;
+    background-color: white;
+    padding:20px 10px ;/*Top/Bottom  left/right*/
+}
+
+.scroll-product .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+}
+.product img{
+    margin-right: 5px;
+    margin:5px 5px;
+}
+.product::-webkit-scrollbar{
+    width: 8px;
+    cursor: pointer;
+}
+.product::-webkit-scrollbar track{
+    border-radius: 10px;
+}
+.product::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color:white;
+}
+.product::-webkit-scrollbar-thumb:hover{
+  
+    background-color: #b4b2b2;
+}
+
+/*Flight Section*/
+.toys-offer{
+    background: white;
+    width: 96%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.toys-offer img{
+    width:100%;
+}
+/*SIGN IN*/
+.signin{
+    width: 100%;
+    background-color:#fff ;
+    margin: 20px 0;
+    padding:30px 0 ;
+}
+.signin .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(90, 64, 64);
+    padding: 30px 0;
+}
+.signin .content p{
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.signin .content a{
+    text-decoration: none;
+}
+.signin .content button{
+    font-size: 1rem;
+    pad: 10px 40px;
+    background-color:rgb(218, 133, 22) ;
+    border: 0;
+    border-radius:4px ;
+    width: 200px;
+}
+
+
+
+/*Footer*/
+footer{
+    margin-top: 10px;
+    
+}
+.foot-panel1 {
+background-color: #37475a;
+color: white;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 10px;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo1{
+    background-image: url('amazonlogo.png');
+    background-size: cover;
+    height: 85px;
+    width: 130px;
+}
+.foot-panel4{
+    background-color:#0f1111;
+    color: white;
+    height: 60px;
+    text-align: center;
+}
+.pages{
+font-size: 0.7rem;
+
+padding-top: 15px;
+}
+.copyright{
+    font-size: 0.7rem;
+    padding-top: 5px;
+}
